@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+html
+{
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	width: 100%;
+	justify-content: space-between;
+	background-color: hsl(36, 100%, 99%);
+}
+
+footer
+{
+	margin-top: .6rem;
+}
+
+body
+{
+	padding: 2% 5% 2% 10%;
+}
+
+#menuclose,#menuopen, .mobileimage
+{
+	display: none;
+}
+
+header, .maininfo, .maintext, .info, .info div
+{
+	display: flex;
+}
+
+.imageandinfo, .new , .about
+{
+	display: grid;
+}
+
+
+header
+{
+	margin-bottom: 3rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header button
+{
+	background-color: transparent;
+	color:hsl(233, 8%, 79%);
+}
+
+header button:hover
+{
+	transition: .3s;
+	cursor: pointer;
+	color: hsl(5, 85%, 63%);
+}
+
+
+.desktopimage
+{
+	width: 100%;
+	height:100%;
+}
+
+
+
+
+h1
+{
+	width: 45%;
+	font-size: 4.2rem;
+	margin-top: 0;
+	font-weight: 800;
+	margin-bottom: 0;
+}
+
+.maintext
+{
+	justify-content: space-between;
+	margin-top: 2rem;
+	place-items:start;
+
+}
+
+
+.about
+{
+	width:52%;
+	font-size: 1.5rem;
+	height: 100%;
+}
+
+
+.about p
+{
+
+	margin: 0;
+	font-weight: 800;
+	color:hsl(233, 8%, 79%);
+	
+
+}
+
+button
+{
+	font-family: inherit;
+	font-size: inherit;
+	border:0;
+	font-weight: 800;
+}
+
+
+.readmore
+{
+	margin-bottom: 0;
+	margin-top: auto;
+	background-color: hsl(5, 85%, 63%);
+	color: hsl(36, 100%, 99%);
+	letter-spacing: .3rem;
+	width: 70%;
+	height: 4.2rem;
+	text-transform: uppercase;
+	
+	
+
+}
+
+.readmore:hover
+{
+	transition: .3s;
+	background-color: hsl(240, 100%, 5%);
+	cursor: pointer;
+	letter-spacing: .25rem;
+
+}
+
+
+
+
+/*    |\  |  |`````  |    |
+      | \ |  |===    | /\ |
+      |  \|  |_____  |/  \|      */
+
+h2
+{
+	color: hsl(35, 77%, 62%);
+	font-size: 3rem;
+	margin: 0;
+}
+
+.new
+{
+	background-color: hsl(240, 100%, 5%);
+	color: hsl(36, 100%, 99%);
+	font-weight: 800;
+	margin-left: 5%;
+	padding: 2rem;
+	width: 100%;
+	font-size: 1.5rem;
+}
+
+hr
+{
+	width: 100%;
+	height: .01rem;
+	margin: 0;
+	padding: 0;
+	border:hsl(236, 13%, 42%) .1rem solid;
+}
+
+
+.new span
+{
+	
+	color:  hsl(236, 13%, 42%);
+	font-weight: 700;
+	margin: 0;
+}
+
+.new p 
+{
+	margin: 0;
+	padding: 0;
+
+}
+
+.new p:hover
+{
+	color:hsl(35, 77%, 62%);
+	transition: .2s; 
+	cursor: pointer;
+}
+
+
+/*	T   |\  |   |'''''   T''T
+	|   | \ |   |===     |  |
+	|   |  \|   |        |__|   */
+
+
+.info
+{
+	width: 95%;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+.info div div
+{
+	display: grid;
+
+}
+
+.info div
+{
+
+	font-size: 3rem;
+	color:  hsl(233, 8%, 79%) ;
+	height: 8rem;
+	font-weight: 800;
+	margin-left: .6rem;
+	width: 20rem;
+}
+
+.info div p
+{
+	font-size: 1rem;
+	color:  hsl(240, 100%, 5%) ;
+	margin-top: 0;
+	
+}
+
+.info div span
+{
+	font-size: .8rem;
+	color:  hsl(233, 8%, 79%) ;
+}
+
+.info img
+{
+	
+	height:inherit;
+
+}
+
+
+.info div:hover div p
+{
+	color:hsl(5, 85%, 63%);
+	transition: .3s;
+}
+
+
+.info div:hover 
+{
+	cursor: pointer;
+}
+
+
+
+/**************************************
+***************************************
+**************************************/
+
+@media(max-width: 800px)
+{
+
+html
+{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	padding: 0 0 0 0;
+	padding: 1rem;
+
+}
+
+
+header
+{
+	position:  fixed;
+	padding: 1rem 0 ;
+	width: 100vw;
+	transform: translateX(-1px);
+	top:0;
+	background-color:   hsl(36, 100%, 99%);
+	background-size: 100vw 100%;
+}
+
+.bar, .barshadow
+{
+	position: fixed;
+	width: 0%;
+	height: 100vh;
+	background-color:  hsl(36, 100%, 99%);
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	transition: .3s;
+
+}
+
+.barshadow
+{
+
+	background-color: hsla(240, 100%, 5%,.5);
+	z-index:-1;
+
+}
+
+.menu
+{
+	position: fixed;
+	display: grid;
+	justify-content:  left;
+	place-items:start;
+	background-color:  hsl(36, 100%, 99%);
+	transition: .3s;
+	right:-200%;
+	top:-100%;
+
+	z-index: 1;
+	
+}
+
+.menu button
+{
+	margin-bottom: .6rem; 
+	color:hsl(240, 100%, 5%);
+}
+
+
+
+#menuopen, #menuclose
+{
+	display: block;
+	right: 3rem;
+	position: relative;
+	z-index: 2;
+}
+
+
+.maininfo
+{
+	display: grid;
+	width: 100%;
+
+
+}
+
+
+.info
+{
+	width: 100%;
+	display: grid;
+}
+
+.info div
+{
+	margin-bottom: 2rem;
+}
+
+.desktopimage
+{
+	display: none;
+}
+
+.mobileimage
+{
+	display: inline-block;
+	width: 100%;
+	margin-top: 6rem;
+
+}
+
+.maintext
+{
+	display: grid;
+	width: 100%;
+}
+
+h1
+{
+	width: 100%;
+	font-size: 2.7rem;
+}
+
+.about p , .about
+{
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+
+.new
+{
+	padding: 0;
+	margin: 0;
+	margin-top: 2rem;
+	font-size:.8rem;
+	
+	width: 100%;
+	
+	
+}
+
+h2
+{
+	font-size: 2rem;
+	padding-top: 2rem;
+}
+
+
+.new p , h2
+{
+	margin:0 1rem;
+	margin-bottom: 1rem;
+}
+
+hr
+{
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+}
+
+
+
