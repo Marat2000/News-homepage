@@ -30,7 +30,7 @@ header, .maininfo, .maintext, .info, .info div
 	display: flex;
 }
 
-.imageandinfo, .new , .about
+.imageandinfo, .new , .about, body
 {
 	display: grid;
 }
